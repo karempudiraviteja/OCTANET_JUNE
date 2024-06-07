@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Photography Landing Page</title>
+</head>
+
+<body>
+    <nav>
+        <div class="heading"><img src="logo.png"  width="50" height="50">Ravi Photography</div>
+        <span class="sideMenuButton" onclick="openNavbar()">
+            &#9776
+        </span>
+        <div class="navbar">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side navigation bar for responsive website -->
+    <div class="sideNavigationBar" id="sideNavigationBar">
+        <a href="#" class="closeButton" onclick="closeNavbar()">
+            &#x274C
+        </a>
+        <a href="#Home">Home</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Contact">Contact</a>
+    </div>
+
+    <!-- Content -->
+    <div class="line" id="Home">
+        <div class="side1">
+            <h1>Capture the Moment</h1>
+            <button>
+                <a href="#Portfolio">View Portfolio</a>
+            </button>
+        </div>
+        <div class="side2">
+            <img src="ravi Studios.jpg" width="500" alt="Photography Banner">
+        </div>
+    </div>
+
+    <section class="portfolio" id="Portfolio">
+        <div class="content">
+            <div class="title">
+                <span>Portfolio</span>
+            </div>
+            <div class="gallery">
+                <div class="photo">
+                    <img src="nature.jpg"  alt="Nature" width="100%">
+                    
+                    <div class="heading">Nature</div>
+                </div>
+                
+                <div class="photo">
+                    <img src="urban.jpg" alt="Urban" width="100%">
+                    <div class="heading">Urban</div>
+                </div>
+                <div class="photo">
+                    <img src="people.jpeg" loading="lazy" alt="People" width="100%">
+                    <div class="heading">People</div>
+                </div>
+                <div class="photo">
+                    <img src="animal1.jpg"  loading="lazy"  alt="Animals" width="100%">
+                    <div class="heading">Animals</div>
+                </div>
+                <!-- Add more photos with their headings here -->
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="contact" id="Contact">
+        <div class="content">
+            <div class="title"><span>Contact</span></div>
+            <div class="contactMenu">
+                <div class="input1">
+                    <form id="contactForm">
+                    <div class="label1">Your Name</div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your Name here" notnull>
+                    </div>
+                    <div class="label1">
+                        <label>Your Email</label>
+                    </div>
+                    <div class="input2">
+                        <input type="email" placeholder="Enter your Email here">
+                    </div>
+                    <div class="label1">
+                        <label>Your Message</label>
+                    </div>
+                    <div class="input2">
+                        <input type="text" placeholder="Enter your Message here">
+                    </div>
+                    <div class="button">
+                        <button>Send Message</button>
+                    </div>5
+                    </form>
+                </div>
+                <div class="input3">
+                    <div class="rightside1">
+                        <div class="title1">
+                            <span>Contact Us</span>
+                        </div>
+                        <div class="content1">
+                            Ravi Photography,Gopalapuram, Andhrapradesh,534316
+                        </div>
+                        <div class="title1">
+                            <span>More Information</span>
+                        </div>
+                        <div class="content1">
+                            We offer a wide range of photography services including portrait, nature, and urban photography. Contact us to book a session or for more information.
+                        </div>
+                        <div class="social-media-icons">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a><!--here you can keep your profile-->
+                            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a><!--here you can keep your profile-->
+                            <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a><!--here you can keep your profile-->
+                        </div>
+                        
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="footer">
+           
+            <span>&copy; 2024 Ravi Photography. All rights reserved.</span>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

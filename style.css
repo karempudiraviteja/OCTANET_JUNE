@@ -1,0 +1,448 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.heading img {
+    margin-right: 10px;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #8cc099;
+}
+
+nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: green;
+}
+
+nav .sideMenuButton {
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    nav .sideMenuButton {
+        display: flex;
+    }
+
+    nav .navbar {
+        display: none;
+    }
+
+    .sideNavigationBar {
+        display: block !important;
+    }
+}
+
+.sideNavigationBar {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: green;
+    overflow-x: hidden;
+    transition: 0.3s ease-in;
+    padding-top: 60px;
+    display: none;
+}
+
+.sideNavigationBar a {
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    color: #d1d1d1;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sideNavigationBar a:hover {
+    color: white;
+}
+
+.sideNavigationBar .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 20px;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+
+.line .side1 {
+    padding-right: 50px;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.side1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: green;
+}
+
+.side1 button {
+    width: 200px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #8cc099;
+    transition: background-color 0.3s ease;
+}
+
+.side1 button:hover {
+    background-color: green;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.side2 img {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .side2 img {
+        width: 350px;
+    }
+
+    .side1 h1 {
+        font-size: 40px;
+    }
+
+    .line {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .side1 h1 {
+        font-size: 35px;
+    }
+
+    .line {
+        flex-direction: column-reverse;
+    }
+
+    .side2 img {
+        width: 400px;
+    }
+
+    .side1 button {
+        width: 100%;
+    }
+}
+
+section .portfolio {
+    margin: 5% 8%;
+}
+
+section .portfolio .content .title span {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+.contact {
+    padding: 20px;
+}
+
+.contact .content {
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.content .title {
+    width: 80%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.title {
+    margin-bottom: 30px;
+    margin-left: 80px;
+}
+
+.contactMenu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input2 {
+    margin-top: 10;
+}
+
+.label1 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+.contactMenu .input1 input {
+    border-radius: 13px;
+    padding: 6px;
+}
+
+.input2 input {
+    border-color: rgb(252, 244, 244);
+    width: 400px;
+}
+
+.button {
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.button button {
+    width: 162px;
+    height: 35px;
+    border-radius: 12px;
+    border-color: transparent;
+}
+
+.button button:hover {
+    background-color: #8cc099;
+}
+
+.rightside1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+}
+
+.title1 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    font-weight: bolder;
+}
+
+.content1 {
+    width: 450px;
+    margin-top: 2px;
+    color: grey;
+}
+
+footer {
+    background: #8cc099;
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+
+footer .footer span {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+}
+
+footer .footer span a {
+    font-weight: 500;
+    color: white;
+}
+
+footer .footer span a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1060px) {
+    .contactMenu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightside1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .content1 {
+        width: 100%;
+        margin-top: 2px;
+        color: grey;
+    }
+
+    .side2 img {
+        width: 95%;
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .side2 img {
+        width: 70%;
+    }
+
+    section .topic a {
+        font-size: 20px;
+    }
+
+    section .topic p {
+        font-size: 5px;
+    }
+
+    .portfolio .gallery .photo{
+width: calc(50% - 20px);
+}
+
+}
+@media screen and (max-width: 480px){
+    .portfolio .gallery .photo{
+        width: calc(100% - 20px);
+       align-content: center;
+        } 
+}
+@media screen and (max-width: 768px){
+    .portfolio .gallery .photo{
+        width: calc(50% - 20px);
+        
+        } 
+    }
+.portfolio .content .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.portfolio .content .photo {
+    text-align: center;
+}
+
+.portfolio .content .photo img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.portfolio .content .photo .heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Add these styles to your style.css file */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+justify-content:center;
+   
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+    width: calc(25% - 10px); /* Adjust the width as needed */
+   border-radius:10px;
+    transition: transform 0.3s ease;
+    
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ;
+display:block;
+}
+
+.photo:hover img {
+    transform: scale(1.1); /* Zoom in effect */
+}
+
+.social-media-icons {
+    margin-top: 20px;
+}
+
+.social-media-icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media-icons a:hover {
+    color: #007bff;
+}
